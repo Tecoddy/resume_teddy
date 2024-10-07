@@ -1,0 +1,22 @@
+<div class="navigation-bar">
+    <button (click)="changePage(0)">Accueil</button>
+    <button (click)="changePage(1)">Education</button>
+    <button (click)="changePage(2)">Experience</button>
+    <button (click)="changePage(3)">Skills</button>
+  </div>
+  
+  <!-- Load the selected page -->
+  <div *ngIf="selectedIndex === 0">
+    <app-accueil></app-accueil>
+  </div>
+  <div *ngIf="selectedIndex === 1">
+    <app-education></app-education>
+  </div>
+  <div *ngIf="selectedIndex === 2">
+    <app-experience></app-experience>
+  </div>
+  <div *ngIf="selectedIndex === 3">
+    <app-skills></app-skills>
+  </div>
+  
+  

@@ -1,0 +1,14 @@
+<div class="experience-container">
+    <h1>Work Experience</h1>
+    
+    <div *ngFor="let experience of experienceList" class="experience-item">
+      <img [src]="experience.image" alt="{{experience.name}}" class="experience-logo" />
+      <div class="experience-details">
+        <h3>{{ experience.name }}</h3>
+        <p  class="experience-desc1" >{{ experience.position }}</p>
+        <p class="experience-desc2">{{ experience.description }}</p>
+        <button (click)="openLink(experience.link)">Learn More</button>
+      </div>
+    </div>
+  </div>
+  

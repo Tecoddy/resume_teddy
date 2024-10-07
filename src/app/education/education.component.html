@@ -1,0 +1,14 @@
+<div class="education-container">
+    <h1>Education</h1>
+    
+    <div *ngFor="let education of educationList" class="education-item">
+      <img [src]="education.image" alt="{{education.name}}" class="education-logo" />
+      <div class="education-details">
+        <h3>{{ education.name }}</h3>
+        <p class="education-desc1">{{ education.description1 }}</p>
+        <p class="education-desc2">{{ education.description2 }}</p>
+        <button (click)="openLink(education.link)">Learn More</button>
+      </div>
+    </div>
+  </div>
+  

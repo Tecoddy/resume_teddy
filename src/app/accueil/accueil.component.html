@@ -1,0 +1,27 @@
+<div class="accueil-container">
+    <h1>My Resume</h1>
+    <div class="image-section">
+        <img [src]="Image" alt="Image" class="image-image">
+        <h3>Teddy Gesbert</h3>
+      </div>
+    
+    <div class="hobbies-section">
+      <h3>Hobbies</h3>
+      <div class="hobbies-list">
+        <div *ngFor="let hobby of hobbies" class="hobby-item">
+          <mat-icon>{{ hobby.icon }}</mat-icon>
+          <p>{{ hobby.label }}</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="social-media-section">
+      <h3>Follow Me on LinkedIn</h3>
+      <button (click)="launchLinkedIn()">Let's Connect !</button>
+    </div>
+
+    <div class="contact-section">
+        <p>teddygesbert&#64;gmail.com - +33784685941</p>
+      </div>
+  </div>
+  

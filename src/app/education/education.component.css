@@ -1,0 +1,47 @@
+/* Styling for the Education component */
+.education-container {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent-blue);
+  }
+
+  
+  .education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--highlight-blue
+    );
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .education-logo {
+    width: 150px;
+    height: auto;
+    color: #fff;
+  }
+  
+  .education-details {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .education-desc1 {
+    color: var(--accent-blue);
+  }
+  .education-desc2 {
+    color: var(--accent-blue);
+  }
+  
+  button {
+    background-color: var(--accent-blue);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

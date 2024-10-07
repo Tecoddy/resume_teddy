@@ -1,0 +1,16 @@
+<div class="skills-container">
+    <h1>Skills</h1>
+    
+    <div class="hard-skills-section">
+      <h2>Hard Skills</h2>
+      <img [src]="hardSkillsImage" alt="Hard Skills" class="hard-skills-image">
+    </div>
+  
+    <div class="soft-skills-section">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li *ngFor="let skill of softSkillsList">{{ skill }}</li>
+      </ul>
+    </div>
+  </div>
+  
